@@ -29,7 +29,7 @@ public class PeopleController : ControllerBase
         };
 
        
-        _context.People.Add(person);
+        _context.People.Add(person);    
         await _context.SaveChangesAsync();
 
         
