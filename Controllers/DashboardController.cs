@@ -20,12 +20,10 @@ public class DashboardController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetTotals()
     {
-        // 1. Busca todas as pessoas e INCLUI a lista de transações de cada uma
         var people = await _context.People
             .Include(p => p.Transactions)
             .ToListAsync();
 
-        // 2. Calcula os totais individuais
         var personTotals = people.Select(p =>
         {
             var totalIncome = p.Transactions
@@ -45,11 +43,9 @@ public class DashboardController : ControllerBase
             };
         }).ToList();
 
-        // 3. Calcula os totais gerais da aplicação
         var grandTotalIncome = personTotals.Sum(p => p.TotalIncome);
         var grandTotalExpense = personTotals.Sum(p => p.TotalExpense);
 
-        // 4. Monta o pacote final
         var dashboard = new DashboardResponseDTO
         {
             People = personTotals,

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Cria uma instância do axios com o endereço base da sua API em C#
+// Criação de uma instância do axios com o endereço base local em C#
 const api = axios.create({
     baseURL: 'https://localhost:7007/api',
 });
