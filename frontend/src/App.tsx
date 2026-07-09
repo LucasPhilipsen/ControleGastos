@@ -84,7 +84,7 @@ function App() {
                         </tbody>
                     </table>
 
-                    {/**/}
+
                     <div style={{ backgroundColor: '#e9ecef', padding: '15px', borderRadius: '8px' }}>
                         <h3>Resumo Geral da Casa</h3>
                         <p><strong>Total de Receitas:</strong> R$ {dashboard.grandTotalIncome.toFixed(2)}</p>

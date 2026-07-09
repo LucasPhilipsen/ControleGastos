@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp",
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173") // A porta do seu React com Vite
+            policy.WithOrigins("http://localhost:5173") // A porta do React com Vite
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });

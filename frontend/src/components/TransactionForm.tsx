@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import api from '../services/api';
 
-// interface Person {
-//     personName: string;
-// }
+
 interface TransactionFormProps {
     onTransactionAdded: () => void;
 }
@@ -30,10 +28,10 @@ export function TransactionForm({ onTransactionAdded }: TransactionFormProps) {
                 setDescription('');
                 setAmount('');
                 setPersonId('');
-                onTransactionAdded(); // Atualiza a tabela
+                onTransactionAdded(); 
             })
             .catch(error => {
-                // Aqui o React intercepta a nossa regra de negócio do Back-end!
+                
                 if (error.response && error.response.status === 400) {
                     alert(`REJEITADO: ${error.response.data}`);
                 } else {

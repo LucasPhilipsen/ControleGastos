@@ -101,9 +101,9 @@ This document serves as the official project backlog. Every *Issue* must be deve
 - **Description:**
   Develop visual components to interact with the C# API. Create forms for user input and dynamic tables to display the calculated financial dashboard.
 - **Acceptance Criteria / Tasks:**
-  - [ ] Create `PersonForm` and `TransactionForm` components.
-  - [ ] Display API error alerts (e.g., minor age restriction).
-  - [ ] Fetch data via Axios and render the Dashboard tables.
-  - [ ] Add basic CSS/styling for a professional look.
+  - [X] Create `PersonForm` and `TransactionForm` components.
+  - [X] Display API error alerts (e.g., minor age restriction).
+  - [X] Fetch data via Axios and render the Dashboard tables.
+  - [X] Add basic CSS/styling for a professional look.
 - **Pre-formatted Commit Message:**
   `feat(web): implement UI components and API integration for dashboard`
