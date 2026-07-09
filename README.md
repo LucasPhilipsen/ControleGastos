@@ -1,3 +1,11 @@
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
+![React](https://img.shields.io/badge/React-%2320232a?style=flat&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC?style=flat&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330?style=flat&logo=javascript&logoColor=%23F7DF1E)
+![Vite](https://img.shields.io/badge/Vite-%23646CFF?style=flat&logo=vite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+
+
 # Home Expenses Control System
 
 A Full-Stack application developed to manage household financial transactions (incomes and expenses), calculate net balances per person, and enforce specific business rules regarding minors.
@@ -15,6 +23,11 @@ A Full-Stack application developed to manage household financial transactions (i
 * **TypeScript:** Static typing for safer frontend data handling.
 * **Vite:** High-performance local development server and bundler.
 * **Axios:** HTTP client for API communication.
+
+**Version Control & Workflow:**
+* **Git & GitHub:** Source code management.
+* **Feature Branch Workflow:** Isolated branches for each issue (`feature/`, `chore/`, `docs/`).
+* **Conventional Commits:** Standardized semantic commit messages for a clean and readable history.
 
 ## Core Business Rules Implemented
 1. **Cascade Deletion:** Deleting a person automatically removes all their associated financial transactions from the database.
